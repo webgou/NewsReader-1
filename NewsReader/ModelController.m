@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 The Hackerati, Inc. All rights reserved.
 //
 
-#import <HuffPoFeedSDK/HuffPoTopNewsFeed.h>
+#import <HuffPoAPI/HuffPoAPI.h>
 #import "ModelController.h"
 
 #import "DataViewController.h"
@@ -33,6 +33,9 @@
         // Create the data model.
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         _pageData = [[dateFormatter monthSymbols] copy];
+        
+        Feed *feed = [[HuffPoTopNewsFeed alloc] init];
+        NSLog (@"Created HuffPoTopNewsFeed");
     }
     return self;
 }

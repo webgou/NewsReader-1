@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C9DBDAA15DDEB080088DFDF /* libHuffPoAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9DBDA015DDE6620088DFDF /* libHuffPoAPI.a */; };
 		6CB9B83515DC5A0F00AEEC2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9B83415DC5A0F00AEEC2C /* UIKit.framework */; };
 		6CB9B83715DC5A0F00AEEC2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9B83615DC5A0F00AEEC2C /* Foundation.framework */; };
 		6CB9B83915DC5A0F00AEEC2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9B83815DC5A0F00AEEC2C /* CoreGraphics.framework */; };
@@ -36,6 +37,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6C9DBD9F15DDE6620088DFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C9DBD9315DDE6610088DFDF /* HuffPoAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C9DBD0315DDA8A60088DFDF;
+			remoteInfo = HuffPoAPI;
+		};
+		6C9DBDA115DDE6620088DFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C9DBD9315DDE6610088DFDF /* HuffPoAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C9DBD1415DDA8A70088DFDF;
+			remoteInfo = HuffPoAPITests;
+		};
+		6C9DBDA815DDE9360088DFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C9DBD9315DDE6610088DFDF /* HuffPoAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C9DBD0215DDA8A60088DFDF;
+			remoteInfo = HuffPoAPI;
+		};
 		6CB9B85F15DC5A1000AEEC2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CB9B82715DC5A0F00AEEC2C /* Project object */;
@@ -46,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C9DBD9315DDE6610088DFDF /* HuffPoAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HuffPoAPI.xcodeproj; path = HuffPoAPI/HuffPoAPI.xcodeproj; sourceTree = "<group>"; };
 		6CB9B83015DC5A0F00AEEC2C /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB9B83415DC5A0F00AEEC2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6CB9B83615DC5A0F00AEEC2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C9DBDAA15DDEB080088DFDF /* libHuffPoAPI.a in Frameworks */,
 				6CB9B8AF15DC9E3B00AEEC2C /* libxml2.dylib in Frameworks */,
 				6CB9B8AD15DC9E2400AEEC2C /* QuartzCore.framework in Frameworks */,
 				6CB9B8AB15DC9E1B00AEEC2C /* SystemConfiguration.framework in Frameworks */,
@@ -113,9 +137,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C9DBD9415DDE6610088DFDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C9DBDA015DDE6620088DFDF /* libHuffPoAPI.a */,
+				6C9DBDA215DDE6620088DFDF /* HuffPoAPITests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6CB9B82515DC5A0F00AEEC2C = {
 			isa = PBXGroup;
 			children = (
+				6C9DBD9315DDE6610088DFDF /* HuffPoAPI.xcodeproj */,
 				6CB9B88815DC6F7900AEEC2C /* README.md */,
 				6CB9B87415DC6B8500AEEC2C /* .gitignore */,
 				6CB9B87215DC6B0700AEEC2C /* .gitattributes */,
@@ -215,6 +249,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6C9DBDA915DDE9360088DFDF /* PBXTargetDependency */,
 			);
 			name = NewsReader;
 			productName = NewsReader;
@@ -259,6 +294,12 @@
 			mainGroup = 6CB9B82515DC5A0F00AEEC2C;
 			productRefGroup = 6CB9B83115DC5A0F00AEEC2C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6C9DBD9415DDE6610088DFDF /* Products */;
+					ProjectRef = 6C9DBD9315DDE6610088DFDF /* HuffPoAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6CB9B82F15DC5A0F00AEEC2C /* NewsReader */,
@@ -266,6 +307,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6C9DBDA015DDE6620088DFDF /* libHuffPoAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHuffPoAPI.a;
+			remoteRef = 6C9DBD9F15DDE6620088DFDF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6C9DBDA215DDE6620088DFDF /* HuffPoAPITests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HuffPoAPITests.octest;
+			remoteRef = 6C9DBDA115DDE6620088DFDF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6CB9B82E15DC5A0F00AEEC2C /* Resources */ = {
@@ -331,6 +389,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6C9DBDA915DDE9360088DFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HuffPoAPI;
+			targetProxy = 6C9DBDA815DDE9360088DFDF /* PBXContainerItemProxy */;
+		};
 		6CB9B86015DC5A1000AEEC2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6CB9B82F15DC5A0F00AEEC2C /* NewsReader */;
@@ -430,7 +493,11 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsReader/NewsReader-Prefix.pch";
-				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "NewsReader/NewsReader-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -446,7 +513,11 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsReader/NewsReader-Prefix.pch";
-				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "NewsReader/NewsReader-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
